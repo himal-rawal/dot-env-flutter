@@ -1,16 +1,33 @@
-# dotenvcheck
+# Hiding Secrets (.env in flutter)
 
-A new Flutter project.
+To Hide secrets of your flutter mobile app from being exposed to github you can use 
+[flutter_dotenv](https://pub.dev/packages/flutter_dotenv).
 
-## Getting Started
+## Steps
 
-This project is a starting point for a Flutter application.
+Here we are using different environments ad maintaining .env of all those flavours.
+Here we have 2 flavours: check and live
 
-A few resources to get you started if this is your first Flutter project:
+1. Add flutter_dotenv: ^5.1.0 in your pubspec.yaml file.
+2. create .env for both flavours like 
+```
+.env.check & .env.live
+```
+3. now add secret inside those files as 
+```
+secret= this is secret
+```
+4. add those files inside gitignore.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+5. now load these files based on the  flavour being run
+6. Access those secret environment variables directly or by creating wrapper classes
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+For More details refer to the code of this reposiitory.
+
+## Contributing
+
+Pull requests are welcome. 
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
