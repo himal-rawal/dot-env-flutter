@@ -1,0 +1,21 @@
+flavors:
+  check:
+    app:
+      name: "check dot ev"
+
+    android:
+      applicationId: "com.example.check"  
+    ios:
+      bundleId: "com.example.check"
+    macos:
+      bundleId: "com.example.check"  
+  live:
+    app:
+      name: "live App"
+  
+    android:
+      applicationId: "com.example.live"
+    ios:
+      bundleId: "com.example.live"
+    macos:
+      bundleId: "com.example.live"

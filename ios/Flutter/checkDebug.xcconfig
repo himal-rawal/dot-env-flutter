@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_check.dart
+ASSET_PREFIX=check
+BUNDLE_NAME=check dot ev
+BUNDLE_DISPLAY_NAME=check dot ev
