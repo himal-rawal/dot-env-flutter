@@ -1,3 +1,4 @@
+import 'package:dotenvcheck/wrappers/dotenv_secret.dart';
 import 'package:flutter/material.dart';
 
 import '../flavors.dart';
@@ -13,7 +14,7 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          'Hello ${F.title}',
+          'Hello ${DotEnvSecret.secretCode}',
         ),
       ),
     );
